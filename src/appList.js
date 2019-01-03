@@ -6,12 +6,12 @@ export class NotesAppList extends Component {
 	}
 
 	render() {
-		// items = this.props.tasks.map(() => return <li> items)
+		var items = this.props.tasks.map((element, index) => {
+				return <li key={index}>{element}</li>
+		});
 		return (
 			<ul>
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
+				{items}
 			</ul>
 		);
 	}
