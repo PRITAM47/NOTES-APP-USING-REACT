@@ -16,9 +16,9 @@ export class AddNewTask extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.justSubmitted}>
-				<input type="text" />
-				<input type="submit" value="ADD" />
+			<form onSubmit={this.justSubmitted} className="text-center">
+				<input type="text" className="form-control-lg" placeholder="Add New Task"/>
+				<input type="submit"  className="btn btn-outline-success ml-2" value="ADD" />
 			</form>
 		);
 	}
